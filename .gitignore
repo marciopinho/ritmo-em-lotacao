@@ -1,9 +1,0 @@
-gtfs/*
-refs
-code/go/pkg/linux_amd64/hitnail.net/gtfssimulator/*.a
-node_modules
-src/**/*.js
-src/**/*.js.map
-dist
-npm-debug.log
-debug.log
