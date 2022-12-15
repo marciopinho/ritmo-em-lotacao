@@ -1,7 +1,8 @@
 import axios from 'axios'
 
 const getSnapshot = async () => {
-    const url = 'https://temporeal.pbh.gov.br?param=C';
+    // const url = 'https://temporeal.pbh.gov.br?param=C';
+    const url = 'https://temporeal.pbh.gov.br?param=D';
 
     console.info(`GET '${url}'`)
     const result = await axios.get(url);
@@ -48,3 +49,39 @@ const parseSnapshot = (rawData: string) => {
 
 
 export { getSnapshot, parseSnapshot }
+
+
+
+
+
+  // Loop through the response objects
+  response.forEach((item) => {
+    // Create an object with only the desired properties
+    const obj = {
+      HR: item.HR,
+      NL: item.NL,
+      LG: item.LG,
+      LT: item.LT
+    };
+
+    // Add the object to the values array
+    values.push(obj);
+  });
+
+  // Convert the values array to a JSON string
+  const json = JSON.stringify(values);
+
+  // Write the JSON string to a file
+  fs.writeFile('response.txt', json, (err) => {
+    if (err) {
+      console
+
+
+
+
+
+
+
+
+
+  

@@ -68,6 +68,7 @@ const avgVector = (f: number, resolution: number): Vector | null => {
     hexBins(frames[f], resolution),
   ];
 
+
   hexLayers.clearLayers();
   hexLayers.addLayer(drawHexBins(bins[1]));
 
