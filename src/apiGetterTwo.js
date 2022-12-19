@@ -31,6 +31,21 @@ function makeGetRequest() {
 
 // Call the function every 30 seconds
 setInterval(makeGetRequest, 30000);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // This function makes a GET request to the specified URL, appends the response to a string, and then writes the string to a file named response.txt. It then calls itself again every 30 seconds using the setInterval() method.
 
 // Note that this function uses the https module, which is part of the Node.js core. To use this function in your code, you will need to have Node.js installed. You can learn more about how to install Node.js and use it to run JavaScript code on the official Node.js website.
